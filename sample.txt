@@ -1,0 +1,124 @@
+* { margin: 0; padding: 0; }
+
+
+.grid {
+ display: grid;
+ grid-auto-rows: minmax(100px, auto);
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-areas: "nav nav nav nav"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "article article article article"
+		      "article article article article"
+		      "article article article article"
+		      "card-left card-mid card-right card-right"
+		      "card-left card-mid card-right card-right"
+		      "card-left card-mid card-right card-right"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "ban ban ban ban"
+		      "ban ban ban ban"
+		      "footer footer footer footer"
+		      "footer footer footer footer"
+		      "footer footer footer footer"
+ ;
+}
+
+
+@media only screen and (min-width: 480px) {
+  .grid {
+ grid-template-areas: "nav nav nav nav"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "banner banner banner banner"
+		      "article article article article"
+		      "article article article article"
+		      "article article article article"
+		      "card-left card-mid card-right card-right"
+		      "card-left card-mid card-right card-right"
+		      "card-left card-mid card-right card-right"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "section section aside aside"
+		      "ban ban ban ban"
+		      "ban ban ban ban"
+		      "footer footer footer footer"
+		      "footer footer footer footer"
+		      "footer footer footer footer"
+ ;
+  }
+}
+
+
+
+
+
+.items:nth-child(1) {
+ background: #222;
+ grid-area: nav;
+}
+
+.items:nth-child(2) {
+ /*background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://wallpaperaccess.com/full/1140538.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom;*/
+ background: orange;
+ grid-area: banner;
+}
+
+.items:nth-child(3) {
+ background: #333;
+ grid-area: article;
+}
+
+.items:nth-child(4) {
+ background: #ddd;
+ grid-area: card-left;
+}
+
+.items:nth-child(5) {
+ background: #ddd;
+ margin-left: 10px; 
+ grid-area: card-mid;
+}
+
+.items:nth-child(6) {
+ background: #ddd;
+ margin-left: 10px;
+ grid-area: card-right;
+}
+
+.items:nth-child(7) {
+ grid-area: section;
+}
+
+.items:nth-child(8) {
+ background: #222;
+ margin-left: 10px;
+ grid-area: aside;
+}
+
+.items:nth-child(9) {
+ background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url("https://purposefuldevelopmentinc.com/wp-content/uploads/2021/04/1.jpg");
+ background-size: cover;
+ background-position: center;
+ grid-area: ban;
+}
+
+.items:nth-child(10) {
+ background: #222;
+ grid-area: footer;
+}
